@@ -4,19 +4,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/lib/auth-context";
 import { logoutUser } from "@/lib/auth";
-
-type Exercise = {
-  name: string | null;
-  id: number;
-  description: string | null;
-  steps: any;
-  equipment: string | null;
-  image: string | null;
-  gif: string | null;
-  video: string | null;
-  alternatives: any; 
-  target: any;
-};
+import { Exercise } from '@/types/exercises';
 
 export default function Home() {
   const { user, loading } = useAuth();

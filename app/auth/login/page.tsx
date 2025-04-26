@@ -44,6 +44,7 @@ export default function LoginPage() {
               alt="Background"
               fill
               className="object-cover opacity-70 rounded-r-[3rem]"
+              priority
             />
             <div className="absolute inset-0 bg-black/30 rounded-r-[3rem] z-[5]" />
           </div>
